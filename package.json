@@ -1,0 +1,19 @@
+{
+  "name": "lyrix-bulma-style",
+  "version": "1.0.0",
+  "main": "sass/lyrix.scss",
+  "repository": "https://github.com/lyrix-music/styles",
+  "author": "Srevin Saju",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.9.3",
+    "bulma-prefers-dark": "^0.1.0-beta.0",
+    "bulma-switch": "^2.0.0",
+    "node-sass": "^6.0.1"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/lyrix.scss css/lyrix.css",
+    "css-watch": "yarn run css-build -- --watch",
+    "start": "yarn run css-watch"
+  }
+}
